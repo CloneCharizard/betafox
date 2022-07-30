@@ -1,69 +1,16 @@
 <p align="center">
-  <a href="https://github.com/riimuru/gogoanime">
+  <a href="https://github.com">
     <img src="images/image1.png" alt="Logo" width="85" height="85">
   </a>
 
-  <h3 align="center">GogoAnime API</h3>
+  <h3 align="center">BetaFox API</h3>
 
   <p align="center">
-    <samp>A free anime streaming restful API serving anime from <a href="https://www1.gogoanime.cm/">Gogoanime</a></samp>
+    <samp>A free restful API serving from </samp>
     <br />
     <a href="#routes"><strong>Explore the api »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/riimuru/gogoanime/issues/new?assignees=riimuru&labels=bug&template=bug-report.yml">Bug report</a>
-    ·
-    <a href="https://github.com/riimuru/gogoanime/issues/new?assignees=riimuru&labels=enhancement&template=feature-request.md">Feature request</a>
-  </p>
-  <p align="center">
-    <a href="https://github.com/riimuru/gogoanime/actions/workflows/docker-build.yml">
-      <img src="https://github.com/riimuru/gogoanime/actions/workflows/docker-build.yml/badge.svg" alt="stars">
-    </a>
-     <a href="https://github.com/riimuru/gogoanime/actions/workflows/codeql-analysis.yml">
-      <img src="https://github.com/riimuru/gogoanime/actions/workflows/codeql-analysis.yml/badge.svg" alt="stars">
-    </a>
-    <a href="https://github.com/riimuru/gogoanime">
-      <img src="https://img.shields.io/github/stars/riimuru/gogoanime" alt="stars">
-    </a>
-    <a href="https://discord.gg/qTPfvMxzNH">
-      <img src="https://img.shields.io/discord/987492554486452315?color=7289da&label=discord&logo=discord&logoColor=7289da" alt="Discord">
-    </a>
-        <a href="https://github.com/consumet/extensions/blob/master/LICENSE">
-      <img src="https://img.shields.io/github/license/consumet/extensions" alt="GitHub">
-    </a>
-  </p>
-</p>
-
-> ### Note:
-> You might experience some delays or issues using [my hosted api on heroku](https://gogoanime.herokuapp.com/), so feel free to host it on your own site.
-
-<h1> Table of Contents </h1>
-
-- [Installation](#installation)
-  - [Local](#local)
-  - [Docker](#docker)
-  - [Heroku](#heroku)
-- [Routes](#routes)
-  - [Get Recent Episodes](#get-recent-episodes)
-  - [Get Popular Anime](#get-popular-anime)
-  - [Get Anime Search](#get-anime-search)
-  - [Get Anime Movies](#get-anime-movies)
-  - [Get Top Airing](#get-top-airing)
-  - [Get Anime Genres](#get-anime-genres)
-    - [Genres](#genres)
-  - [Get Anime Details](#get-anime-details)
-  - [Get Streaming URLs](#get-streaming-urls)
-    - [VIDCDN](#vidcdn)
-    - [StreamSB](#streamsb)
-    - [~~Fembed~~ (DEPRECATED)](#fembed-deprecated)
-  - [~~Get Download URLs~~ (DEPRECATED)](#get-download-urls-deprecated)
-    - [Download](#download)
-  - [Get Episode Thread](#get-episode-thread)
-- [Contributing](#contributing)
-- [Showcases](#showcases)
-- [NEW API (v2) 🎉](#new-api-v2-)
-  - [Currently supported sites](#currently-supported-sites)
-  - [How to get started?](#how-to-get-started)
 
 
 ## Installation
@@ -85,13 +32,13 @@ npm start #or yarn start
 Now the server is running on http://localhost:3000
 
 ### Docker
-Docker image is available at [Docker Hub](https://hub.docker.com/r/riimuru/gogoanime).
+Docker image is available at [Docker Hub](https://hub.docker.com/r/CloneCharizard/betafox).
 
 run the following command to pull and run the docker image.
 
 ```sh
-docker pull riimuru/gogoanime
-docker run -p 3000:3000 riimuru/gogoanime
+docker pull CloneCharizard/betafox
+docker run -p 3000:3000 CloneCharizard/betafox
 ```
 This will start the server on port 3000. You can access the server at http://localhost:3000/, And can change the port by changing the -p option to `-p <port>:3000`.
 
@@ -100,7 +47,7 @@ You can add `-d` flag to run the server in detached mode.
 ### Heroku
 Host your own instance of the api on heroku using the button below.
 
-[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/riimuru/gogoanime/tree/main)
+[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/CloneCharizard/betafox/tree/main)
 
 
 ## Routes
